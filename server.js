@@ -5,7 +5,6 @@ import cors from "cors"
 import userRoutes from "./routes/userRoutes.js"
 import taskRoutes from "./routes/taskRoutes.js"
 import cookieParser from "cookie-parser"
-import path from "path";
 
 dotenv.config();
 connectDB();
@@ -37,4 +36,4 @@ app.use("/api/tasks", taskRoutes);
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => console.log(`server is running on port ${PORT}`));
+app.listen(PORT);
