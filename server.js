@@ -11,7 +11,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
 //middleware
 app.use(express.urlencoded({extended:true}));
