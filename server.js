@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOption = {
-  origin: ["http://localhost:5173", "https://Task-management-app.onrender.com"],
+  origin: ["http://localhost:5173", "https://taskflow-frontend-pvrs.vercel.app"],
   credentials: true,
 };
 
