@@ -18,8 +18,9 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOption = {
-  origin: ["http://localhost:5173", "https://taskflow-frontend-pvrs.vercel.app"],
+  origin: ["https://taskflow-frontend-pvrs.vercel.app"],
   credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 };
 
 
