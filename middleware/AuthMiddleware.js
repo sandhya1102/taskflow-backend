@@ -16,11 +16,13 @@ const AuthMiddleware = async (req, res, next) => {
       });
     }
 
-    req.user = {id: decode.userId};
+    req.user = { id: decode.userId };
     next();
   } catch (error) {
     console.error("Auth Error:", error);
-    res.status(401).json({ message: "Authentication failed", error: error.message });
+    res
+      .status(401)
+      .json({ message: "Authentication failed", error: error.message });
   }
 };
 
